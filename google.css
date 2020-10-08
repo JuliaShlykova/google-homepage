@@ -1,0 +1,141 @@
+html{
+    height:100%;
+}
+body{
+    margin:0;
+    padding:0;
+    padding-bottom:40px;
+}
+img[alt="Google logo"]{/*We don't know element's sizes, so we center it like that*/
+    position: relative;
+    margin-top: 150px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#searchForm{/*We do know element's sizes*/
+    width: 500px;
+    height: 44px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    margin-top:100px;
+    left:50%;
+    margin: 0 0 0 -250px;
+}
+#searchForm:hover{
+    box-shadow: 0 0 10px lightgrey;
+}
+#searchForm input[type="text"]{
+    border: none;
+    height: 40px;
+    width: 85%;
+    font-size: 13px;
+    color: rgba(0,0,0,1);
+    outline:none;
+}
+
+img[alt="magnifier"]{
+    height:25px;
+    background-color: transparent;
+    opacity: 0.5;
+    margin-top: 7.5px;
+    margin-left: 5px;
+}
+#voiceSearchButton{
+    background: url("https://www.clipartkey.com/mpngs/m/27-272205_google-microphone-png-google-search-by-voice-icon.png") no-repeat center;
+    background-size: 21px 21px;
+    border: none;
+    border-radius: 2px;
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 16px;
+    width: 26px;
+}
+#submitButtons{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 50px;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    height: 36px;
+}
+#submitButtons input{
+    margin-left:5px;
+    margin-right:5px;
+    width:120px;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#submitButtons input:hover{
+    border:1px solid #C0C0C0;
+    box-shadow: 0 1px 1px lightgrey;
+}
+nav{
+    margin:15px;
+    height:40px;
+}
+nav ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    float:left;
+}
+nav li a{
+    display: block;
+    text-align:center;
+    padding:10px 15px;
+    text-decoration: none;
+    font-size:0.9rem;
+    color: darkslategray;
+}
+.mr{
+    float:right;
+}
+a:hover{
+    text-decoration: underline;
+}
+#signIn{
+    background-color: rgb(66,133,244); 
+    color:white; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    cursor: default
+}
+#signIn:hover{
+   text-decoration: none; 
+}
+footer{
+    height:40px;
+    background-color:#e6e6e6;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+}
+footer ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+footer li{
+    float:left;
+}
+footer li a{
+    display:block;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    font-size:0.9rem;
+    color: darkslategray;
+}
